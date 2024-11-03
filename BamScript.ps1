@@ -40,12 +40,12 @@ Write-Host ""
 Write-Host ""
 Write-Host -ForegroundColor Blue " Xixs Viva el Barça " -NoNewLine
 Write-Host -ForegroundColor White " - " -NoNewLine
-Write-Host -ForegroundColor Blue " ResellMe "
+Write-Host -ForegroundColor Pink " ResellMe "
 Write-Host ""
 
 function Test-Admin {;$currentUser = New-Object Security.Principal.WindowsPrincipal $([Security.Principal.WindowsIdentity]::GetCurrent());$currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator);}
 if (!(Test-Admin)) {
-    Write-Warning "Ejecutalo como administrador "
+    Write-Warning "Ejecutalo como administrador :) "
     Start-Sleep 10
     Exit
 }
@@ -122,4 +122,4 @@ $Bam | Out-GridView -PassThru -Title "Entradas BAM: $($Bam.count)  - Zona Horari
 $sw.stop()
 $t = $sw.Elapsed.TotalMinutes
 Write-Host ""
-Write-Host "Se tardo $t Minutos" -ForegroundColor Yellow
+Write-Host "Se tardo $t Minutos :)" -ForegroundColor Yellow
