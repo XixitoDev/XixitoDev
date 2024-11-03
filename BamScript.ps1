@@ -38,9 +38,9 @@ Clear-Host
 
 Write-Host ""
 Write-Host ""
-Write-Host -ForegroundColor Blue " Xixs Viva el Barça " -NoNewLine
+Write-Host -ForegroundColor Blue "Viva Xixs y el Barça" -NoNewLine
 Write-Host -ForegroundColor White " - " -NoNewLine
-Write-Host -ForegroundColor Pink "ResellMe" -NoNewLine
+Write-Host -ForegroundColor Pink "ResellMe"
 Write-Host ""
 
 function Test-Admin {;$currentUser = New-Object Security.Principal.WindowsPrincipal $([Security.Principal.WindowsIdentity]::GetCurrent());$currentUser.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator);}
